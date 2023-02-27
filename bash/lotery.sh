@@ -7,7 +7,7 @@ read number
 if [[ -z $number || $number -gt 100 || $number -lt 0 ]]; then 
 	echo "try again"
 	exit
-if
+fi
 
 echo "your number is $number"
 
