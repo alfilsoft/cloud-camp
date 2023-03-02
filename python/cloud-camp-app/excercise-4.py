@@ -29,6 +29,11 @@ class Curse():
     def add_student(self,student):
         self.students_list.append(student)
         
+    
+class Supervisor(Person):
+    def __init__(self,name, age, location, email,range):
+        super().__init__(name, age, location, email)
+        
 pablo = Student("Pab",22,"peru","p.p@e.com")
 pedro = Student("Ped",48,"chile","p.elgrande@e.com")
 camila= Student("Cam",22,"col","p.labrincona@e.com")
@@ -37,8 +42,12 @@ einstein.setModules(["pytho","bash"])
 python_curse= Curse("Python",einstein,[pablo,pedro])
 python_curse.add_student(camila)
 
+superv = Supervisor("Pab",22,"peru","p.p@e.com","super") 
+
+
 print(pablo)
 print(pedro)
 print(einstein)
+s
 print(python_curse)
        
